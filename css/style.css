@@ -1,3 +1,4 @@
+/* RESET */
 * {
     padding: 0;
     margin: 0;
@@ -7,7 +8,23 @@
 .app-wrapper {
     background-color: lightcoral;
 }
+            /* MAIN */
+main {
+    width: calc(100% -100px);
+    display: flex;
+    height: calc(100vh - 100px);
+}
 
+            /* NAV LEFT */
+.nav-left {
+    background-color: blueviolet;
+    width: 200px;
+}
+            /* Container RIGHT */
+
+
+            /* FOOTER */
 footer {
     background-color: aquamarine;
+    height: 100px;
 }
