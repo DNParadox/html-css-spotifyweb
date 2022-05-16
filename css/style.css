@@ -5,12 +5,16 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
 .app-wrapper {
     background-color: lightcoral;
 }
             /* MAIN */
 main {
-    width: calc(100% -100px);
+    width: calc(100% -250px);
     display: flex;
     height: calc(100vh - 100px);
 }
@@ -18,7 +22,59 @@ main {
             /* NAV LEFT */
 .nav-left {
     background-color: blueviolet;
-    width: 200px;
+    width: 250px;
+    overflow-y: hidden;
+}
+
+.nav-left ul {
+    list-style-type: none;
+    line-height: 2rem;
+    color: #818181;
+}
+
+i {
+    font-size: 1.2rem;
+}
+
+a {
+    color: #818181;
+    text-decoration: none;
+}
+
+h3 {
+    color: white;
+    margin: 0.5rem 0;
+}
+
+.nav-left .playlist li:first-child {
+    font-size: 1.3rem;
+}
+
+.squareplus {
+    color: black;
+    background-color: #818181;
+    padding: 3px 10px;
+}
+        /* Common Nav */
+.nav-left li a:hover, .nav-left li:hover{
+ color: white; 
+}
+
+.nav-left li .squareplus:hover {
+    background-color: white;
+}
+.navm {
+    margin-left: 1rem;
+}
+
+.logo {
+    width: 140px;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+img {
+    width: 100%;
 }
             /* Container RIGHT */
 
