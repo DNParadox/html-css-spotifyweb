@@ -158,11 +158,76 @@ figcaption {
     justify-content: flex-end;
     width: 100%;
 }
-.listeningicon i{
+
+
+footer i{
     padding-right: 0.5rem;
-    color: var(--primarycolor);
+    /* color: white; */
 }
 
+.listeningicon i {
+    color: var(--primarycolor)
+}
 
 /* Footer Footermenu Progression Bar */
 
+.progressionbar {
+    width: 39%;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+}
+
+
+.btnsong {
+    align-self: center;
+    margin-bottom: 0.5rem
+}
+
+
+.progression {
+    align-self: center;
+    background-color: #818181;
+    width: 85%;
+    height: 5px;
+    margin: 0 auto;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.progression .bar {
+    width: 30%;
+    height: 100%;
+    background-color: #3c773c;  
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* Footer Progression Bar */
+.volume {
+    width: 20%
+}
+.volumeicon {
+    align-self: center;
+    
+}
+
+
+
+
+/* md size */
+@media screen and (max-width: 1100px) {
+
+    
+}
+
+/* s size */
+
+@media screen and (max-width: 700px) {
+
+    
+}
+
+/* xs size */
+@media screen and (max-width: 600px) {
+
+    
+}
