@@ -1,6 +1,7 @@
-/* :root {
-    --Primary Color: black;
-} */
+:root {
+    --primarycolor:#818181;
+    --navbgcolor:#000;
+}
 /* RESET */
 * {
     padding: 0;
@@ -17,15 +18,15 @@ body {
 }
             /* MAIN */
 main {
-    width: calc(100% - 250px);
+    width: calc(100% - 200px);
     display: flex;
     height: calc(100vh - 100px);
 }
 
             /* NAV LEFT */
 .nav-left {
-    background-color: blueviolet;
-    width: 250px;
+    background-color: var(--navbgcolor);
+    width: 200px;
     overflow-y: hidden;
     display: flex;
     flex-direction: column;
@@ -34,7 +35,7 @@ main {
 .nav-left ul {
     list-style-type: none;
     line-height: 1.9rem;
-    color: #818181;
+    color: var(--primarycolor)
 }
 
 i {
@@ -62,11 +63,11 @@ h3 {
 }
 
 .install {
-display: flex;
-flex-direction: column;
-justify-content: flex-end;
-width: 85%;
-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 85%;
+    height: 100%;
 }
 
 .dflex {
@@ -77,7 +78,7 @@ height: 100%;
 }
         /* Common Nav */
 
-.nav-left li {
+li {
     display: flex;
 }
 
@@ -113,4 +114,55 @@ img {
 footer {
     background-color: aquamarine;
     height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+/* Footer Menu */
+.footermenu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Footer Menu Listening */
+.listening {
+    display: flex;
+    width: 14%;
+}
+footer figure {
+    margin-left: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+figure img {
+    width: 60px;
+}
+
+footer .albumname {
+    margin-left: 0.4rem;
+    font-size: 0.7rem;
+}
+
+figcaption {
+    width: 61px;
+}
+.song {
+    font-weight: bold;
+}
+
+.listeningicon {
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+.listeningicon i{
+    padding-right: 0.5rem;
+    color: var(--primarycolor);
+}
+
+
+/* Footer Footermenu Progression Bar */
+
