@@ -20,7 +20,7 @@ body {
 main {
     width: calc(100% - 200px);
     display: flex;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
 }
 
             /* NAV LEFT */
@@ -76,13 +76,21 @@ h3 {
 .install img {
     width: 7%;
 }
+.circle {
+    background-color: #818181;
+    border-radius: 10px 10px 10px 10px ;
+    transform:scale(1.2);
+    width: 10px;
+    height: 12px;
+    align-self: center;
+}
         /* Common Nav */
 
 li {
     display: flex;
 }
 
-.nav-left li a:hover, .nav-left li:hover{
+ a:hover, .nav-left li:hover{
  color: white; 
 }
 
@@ -95,7 +103,7 @@ li {
 
 .nav-left li img {
     width: 11%;
-    color: #818181;
+    color: var(--primarycolor);
 
 }
 .logo {
@@ -112,8 +120,8 @@ img {
 
             /* FOOTER */
 footer {
-    background-color: aquamarine;
-    height: 100px;
+    background-color: #282828;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -146,11 +154,23 @@ footer .albumname {
     font-size: 0.7rem;
 }
 
+
 figcaption {
     width: 61px;
 }
 .song {
     font-weight: bold;
+    color: white;
+}
+
+.band {
+    color: var(--primarycolor);
+    font-weight: bold;
+}
+
+.band:hover {
+    color: white;
+    text-decoration: underline;
 }
 
 .listeningicon {
@@ -159,10 +179,14 @@ figcaption {
     width: 100%;
 }
 
+.listeningicon i:hover {
+    color: white;
+}
 
 footer i{
     padding-right: 0.5rem;
-    /* color: white; */
+    color: white;
+    font-size: 0.9rem;
 }
 
 .listeningicon i {
@@ -197,13 +221,17 @@ footer i{
 .progression .bar {
     width: 30%;
     height: 100%;
-    background-color: #3c773c;  
+    background-color: white;
     border-radius: 10px 10px 10px 10px;
 }
 
-/* Footer Progression Bar */
+.small {
+    font-size: 0.7rem;
+}
+/* Footer Volume */
 .volume {
-    width: 20%
+    width: 20%;
+    margin-right: 0.5rem;
 }
 .volumeicon {
     align-self: center;
