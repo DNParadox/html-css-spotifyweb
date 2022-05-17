@@ -1,3 +1,6 @@
+/* :root {
+    --Primary Color: black;
+} */
 /* RESET */
 * {
     padding: 0;
@@ -14,7 +17,7 @@ body {
 }
             /* MAIN */
 main {
-    width: calc(100% -250px);
+    width: calc(100% - 250px);
     display: flex;
     height: calc(100vh - 100px);
 }
@@ -24,11 +27,13 @@ main {
     background-color: blueviolet;
     width: 250px;
     overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .nav-left ul {
     list-style-type: none;
-    line-height: 2rem;
+    line-height: 1.9rem;
     color: #818181;
 }
 
@@ -47,7 +52,7 @@ h3 {
 }
 
 .nav-left .playlist li:first-child {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .squareplus {
@@ -55,7 +60,27 @@ h3 {
     background-color: #818181;
     padding: 3px 10px;
 }
+
+.install {
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+width: 85%;
+height: 100%;
+}
+
+.dflex {
+    display: flex;
+}
+.install img {
+    width: 7%;
+}
         /* Common Nav */
+
+.nav-left li {
+    display: flex;
+}
+
 .nav-left li a:hover, .nav-left li:hover{
  color: white; 
 }
@@ -67,6 +92,11 @@ h3 {
     margin-left: 1rem;
 }
 
+.nav-left li img {
+    width: 11%;
+    color: #818181;
+
+}
 .logo {
     width: 140px;
     margin-top: 1rem;
