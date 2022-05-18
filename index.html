@@ -21,23 +21,25 @@
     <div class="app-wrapper">
         <!-- MAIN -->
         <main>
+            <!-- Nav left -->
             <nav class="nav-left">
-                <!-- Nav left -->
                 <div class="logo navm">
                     <img class="logos" src="img/logo.svg" alt="logo Spotify">
                 </div>
                 <div class="navm">
+                    <!-- nav left Home -->
                     <ul>
                         <li><img src="img/home.svg" alt=""><a href="#">&nbsp; Home</a></li>
                         <li><img src="img/search.svg" alt=""> <a href="#">&nbsp; Cerca</a></li>
                         <li> <img src="img/libreria.svg" alt=""> <a href="#">&nbsp; La tua libreria</a></li>
                     </ul>
                 </div>
-
+                <!-- Nav left Playlist -->
                 <div class="playlist navm">
                     <h3>Playlist</h3>
                     <ul>
-                        <li> <span class="squareplus"><i class="fa-solid fa-plus"></i></span>&nbsp; Crea Playlist </li>
+                        <li> <span class="squareplus"><i class="fa-solid fa-plus"></i></span>&nbsp; <a href="#">Crea
+                                Playlist</a> </li>
                         <li> <a href="#">Nome Playlist</a></li>
                         <li> <a href="#">Nome Playlist</a></li>
                         <li> <a href="#">Nome Playlist</a></li>
@@ -47,7 +49,7 @@
                         <li> <a href="#">Nome Playlist</a></li>
                     </ul>
                 </div>
-
+                <!-- Nav left Install -->
                 <div class="install navm">
                     <div class="dflex">
                         <img src="img/download.svg" alt="download icon"> <a href="#">&nbsp; Installa App</a>
@@ -58,9 +60,62 @@
                         <h3>&nbsp; John Doe</h3>
                     </div>
                 </div>
-
             </nav>
-            <div class="container">TESTO CHE ANDRA A DESTRA</div>
+            <!-- Right Side Content -->
+            <div class="rightside">
+                <!-- Banner -->
+                <div class="banner">
+                    <div class="btnup"><a href="#">effettua upgrade</a></div>
+                </div>
+                <!-- Evidenza -->
+                <section class="evidenza">
+                    <div class="evidence">
+                        <span><a href="#">IN EVIDENZA</a></span>
+                        <span><a href="#">PODCAST</a></span>
+                        <span><a href="#">CLASSIFICHE</a></span>
+                        <span><a href="#">GENERI E MOOD</a></span>
+                        <span><a href="#">NUOVE USCITE</a></span>
+                        <span><a href="#">SCOPRI</a></span>
+                    </div>
+                </section>
+                <!-- Recently Played -->
+                <section class="recently">
+                    <div class="container">
+                        <h2>Recently Played</h2>
+                        <div class="column dflex">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="img/metal_lifting.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="img/stranger.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="img/aquietplace.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="img/split.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card"><img src="img/cure.jpeg" alt=""></div>
+                            </div>
+                            <div class="col">
+                                <div class="card"><img src="img/sinister.jpeg" alt=""></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </section>
+            </div>
         </main>
 
         <!-- Footer -->
@@ -75,22 +130,22 @@
                             <figcaption class="song">Sinister</figcaption>
                             <figcaption class="band">Brano Nome</figcaption>
                         </div>
-            
+
                     </figure>
                     <div class="listeningicon dflex">
                         <i class="fa-regular fa-heart"></i>
                         <i class="fa-regular fa-folder"></i>
                     </div>
-                 
-                </div> 
-                
+
+                </div>
+
                 <!-- Footer  Progression Bar -->
 
-                <div class="progressionbar"> 
+                <div class="progressionbar">
                     <div class="btnsong">
                         <a href="#"><i class="fa-solid fa-shuffle"></i></a>
-                       <a href="#"> <i class="fa-solid fa-backward-step"></i></a>
-                        <a href="#"><i class="fa-regular fa-circle-play"></i></a>
+                        <a href="#"> <i class="fa-solid fa-backward-step"></i></a>
+                        <a class="iconb" href="#"><i class="fa-regular fa-circle-play"></i></a>
                         <a href="#"><i class="fa-solid fa-forward-step"></i></a>
                         <a href="#"><i class="fa-solid fa-arrow-rotate-right"></i></a>
                     </div>
@@ -100,17 +155,17 @@
                             <div class="bar"></div>
                         </div>
                         <div class="song small">4:35</div>
-                    </div>        
+                    </div>
                 </div>
                 <!-- Footer Volume -->
                 <div class="volume dflex">
                     <div class="volumeicon dflex">
-                       <a href="#"> <i class="fa-solid fa-bars"></i></a>
-                        <a href="#"><i class="fa-solid fa-display"></i></a>
-                        <a href="#"><i class="fa-solid fa-volume-high"></i></a>
-                        </div>
-                        <div class="progression">
-                            <div class="bar"></div>
+                        <a class="pdlr" href="#"><i class="fa-solid fa-bars"></i></a>
+                        <a class="pdlr" href="#"><i class="fa-solid fa-display"></i></a>
+                        <a class="pdlr" href="#"><i class="fa-solid fa-volume-high"></i></a>
+                    </div>
+                    <div class="progression size">
+                        <div class="bar"></div>
                     </div>
                 </div>
 
