@@ -124,7 +124,8 @@ img {
 
 .rightside {
     width: calc(100% - 200px);
-    background-color: lightcyan;
+    background-color: black;
+    overflow-y: auto;
 }
 
 
@@ -167,7 +168,7 @@ img {
 }
 
 /* RSC - Recently */
-.recently {
+.mtop {
     margin-top: 2rem;
 }
 .container {
@@ -175,24 +176,34 @@ img {
     width: 95%;
 }
 
+ h2 {
+    color: white;
+
+}
 
 .column {
     margin-top: 1rem;
-
+    flex-wrap: wrap;
 }
 
 .col {
-    border: 1px solid red;
-    width: calc(100% / 6);
+    width: calc(100% / 6 - 0.6rem);
     margin: 0 0.3rem;
 }
 
-.card {
-    width: 150px;
-    height: 130px;
+.card figure img {
+    width: 100%;
+    height: 180px;
+}
+.card .song, .card .band {
+    text-align: center;
 }
 
-
+.smalltext {
+    font-size: 0.7rem;
+    color: #818181;
+}
+/* Created for John Doe */
 
 
             /* FOOTER */
@@ -232,7 +243,7 @@ footer .albumname {
 }
 
 
-figcaption {
+footer figcaption {
     width: 61px;
 }
 .song {
@@ -335,6 +346,10 @@ footer i{
 
 /* md size */
 @media screen and (max-width: 1100px) {
+    .col {
+        width: calc(100% / 4 - 0.6rem);
+        margin: 0 0.3rem;
+    }
 
     
 }
@@ -342,6 +357,12 @@ footer i{
 /* s size */
 
 @media screen and (max-width: 700px) {
+    .col {
+        width: calc(100% / 2 - 0.6rem);
+        margin: 0 0.3rem;
+        margin-top: 0.5rem;
+    }
+
 
     
 }
